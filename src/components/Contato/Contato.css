@@ -1,0 +1,48 @@
+.contato {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000000;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00FF00; /* Verde neon */
+}
+
+.contato-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #333333; /* Borda cinza */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #111111; /* Fundo cinza escuro */
+  color: #FFFFFF; /* Texto branco */
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button {
+  background-color: #00FF00; /* Verde neon */
+  color: #000000; /* Texto preto */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8; /* Efeito de opacidade */
+}

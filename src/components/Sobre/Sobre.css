@@ -1,0 +1,32 @@
+.sobre {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #111111; /* Fundo cinza escuro */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00FF00; /* Verde neon */
+}
+
+p {
+  font-size: 1rem;
+  color: #CCCCCC; /* Cinza claro */
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.tecnologias {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tecnologias span {
+  background-color: #00FF00; /* Verde neon */
+  color: #000000; /* Texto preto */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}

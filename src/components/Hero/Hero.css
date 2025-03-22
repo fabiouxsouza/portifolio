@@ -1,0 +1,80 @@
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Links dos e-books */
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 2rem; /* Espaçamento abaixo dos links */
+}
+
+.ebook-link {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem; /* Tamanho do texto */
+  transition: opacity 0.3s ease; /* Transição suave para opacidade */
+}
+
+.ebook-link:hover {
+  opacity: 0.8; /* Efeito de opacidade ao passar o mouse */
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #FF0000; /* Cor vermelha */
+  border-radius: 50%; /* Forma de círculo */
+  animation: blink 1s infinite; /* Animação de intermitência */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Título e descrição */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00FF00; /* Verde neon */
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #CCCCCC; /* Cinza claro */
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+  background-color: #25D366; /* Cor verde do WhatsApp */
+  color: #FFFFFF; /* Texto branco */
+  padding: 15px 30px; /* Espaçamento interno */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 1rem; /* Tamanho do texto */
+  font-weight: 600; /* Texto em negrito */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Cor mais escura ao passar o mouse */
+}

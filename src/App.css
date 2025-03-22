@@ -1,0 +1,24 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Fonte moderna */
+  background-color: #000000; /* Fundo preto */
+  color: #FFFFFF; /* Texto branco */
+  line-height: 1.6;
+}
+
+a {
+  color: #00FF00; /* Verde neon para links */
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8; /* Efeito de opacidade ao passar o mouse */
+}
+
+/* Container principal */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 20px; /* Adiciona padding-top para o header fixo */
+}

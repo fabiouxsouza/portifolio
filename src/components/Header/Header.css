@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+  position: fixed; /* Fixa o header no topo */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00FF00; /* Verde neon */
+}
+
+.nav {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links */
+}
+
+.nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #00FF00; /* Verde neon ao passar o mouse */
+}
+
+.header-links {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links */
+  align-items: center;
+}
+
+.ebook-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaçamento entre ícone/texto e pontinho */
+}
+
+.ebook-link:hover {
+  opacity: 0.8; /* Efeito de opacidade ao passar o mouse */
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #FF0000; /* Cor vermelha */
+  border-radius: 50%; /* Forma de círculo */
+  animation: blink 1s infinite; /* Animação de intermitência */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.whatsapp-button {
+  background-color: #25D366; /* Cor verde do WhatsApp */
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Cor mais escura ao passar o mouse */
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background-color: #000000;
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .header-links {
+    display: none; /* Esconde os links em telas menores */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

@@ -1,0 +1,54 @@
+.newsletter {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111111; /* Fundo cinza escuro */
+    color: #FFFFFF; /* Texto branco */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #CCCCCC; /* Cinza claro */
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #333333; /* Borda cinza */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    width: 300px; /* Largura do campo */
+  }
+  
+  button {
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: #FFFFFF; /* Texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #128C7E; /* Cor mais escura ao passar o mouse */
+  }
+  
+  .disclaimer {
+    font-size: 0.875rem;
+    color: #888888; /* Cinza mais claro */
+  }
