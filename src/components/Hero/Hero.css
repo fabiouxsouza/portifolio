@@ -39,7 +39,7 @@
 .dot {
   width: 8px;
   height: 8px;
-  background-color: #FF0000; /* Cor vermelha */
+  background-color: #00FF00; /* Cor vermelha */
   border-radius: 50%; /* Forma de círculo */
   animation: blink 1s infinite; /* Animação de intermitência */
 }
@@ -51,8 +51,8 @@
 
 /* Título e descrição */
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.7rem;
+  margin-bottom: 0rem;
   color: #00FF00; /* Verde neon */
 }
 

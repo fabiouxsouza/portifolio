@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion'; // Importe o Framer Motion
 import './Hero.css';
 
 const Hero = () => {
@@ -18,30 +19,56 @@ const Hero = () => {
     }
   };
 
+  // Variantes de animação
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
     <section className="hero">
       <div className="hero-content">
         {/* Links dos e-books */}
-        <div className="hero-links">
+        <motion.div
+          className="hero-links"
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+        >
           <button className="ebook-link" onClick={scrollToNewsletter}>
             <span className="dot"></span> Resgate agora seu e-book grátis
           </button>
           <button className="ebook-link" onClick={scrollToNewsletter}>
             <i className="fas fa-book"></i> E-book: Como criar seu primeiro Micro-SaaS
           </button>
-        </div>
+        </motion.div>
 
         {/* Título e descrição */}
-        <h1>Transformando ideias em produtos digitais com JavaScript.</h1>
-        <p>
-          Cada projeto é único. Eu crio soluções digitais feitas sob medida para atender às suas
-          necessidades e objetivos específicos.
-        </p>
+        <motion.h1
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+        >
+          Transformo ideias em experiências digitais fluidas e memoráveis.
+        </motion.h1>
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+        >
+          Desenvolvedor Front-End | React.js & Next.js | UI/UX Designer.
+        </motion.p>
 
         {/* Botão do WhatsApp */}
-        <button className="whatsapp-button" onClick={redirectToWhatsApp}>
+        <motion.button
+          className="whatsapp-button"
+          onClick={redirectToWhatsApp}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+        >
           <i className="fab fa-whatsapp"></i> Solicite um orçamento grátis
-        </button>
+        </motion.button>
       </div>
     </section>
   );

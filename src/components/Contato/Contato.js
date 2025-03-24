@@ -4,7 +4,7 @@ import './Contato.css';
 const Contato = () => {
   return (
     <section className="contato">
-      <h2>Contato</h2>
+      <h2>Vamos construir algo incrível juntos?</h2>
       <form className="contato-form">
         <input type="text" placeholder="Seu nome" required />
         <input type="email" placeholder="Seu e-mail" required />

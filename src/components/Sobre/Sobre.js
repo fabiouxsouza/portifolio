@@ -6,8 +6,8 @@ const Sobre = () => {
     <section className="sobre">
       <h2>Sobre Mim</h2>
       <p>
-        Sou um web designer front-end com foco em performance, acessibilidade e React. 
-        Ajudo empresas a criar interfaces modernas e funcionais que encantam os usuários.
+      <p>Bem-vindo ao meu universo dev!🌟</p>
+Aqui você encontra projetos onde código e design se encontram para resolver problemas reais. Explore e vamos conversar sobre como posso ajudar seu próximo projeto!
       </p>
       <div className="tecnologias">
         <span>HTML</span>
