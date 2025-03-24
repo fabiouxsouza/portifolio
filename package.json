@@ -13,8 +13,7 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "gh-pages": "^6.1.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r https://github.com/fabiouxsouza/portifolio.git"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
+  
 }
