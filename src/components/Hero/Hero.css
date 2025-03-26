@@ -1,80 +1,115 @@
 .hero {
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
   background-color: #000000;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* Links dos e-books */
-.hero-links {
+/* Título Principal */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00FF00;
+}
+
+/* Subtítulo (Descrição) */
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #CCCCCC;
+  line-height: 1.6;
+}
+
+/* Contêiner dos Botões */
+.hero-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 2rem; /* Espaçamento abaixo dos links */
 }
 
-.ebook-link {
-  background: none;
+/* Estilos Comuns dos Botões */
+.hero-button {
+  padding: 15px 30px;
   border: none;
-  color: #FFFFFF;
-  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1rem; /* Tamanho do texto */
-  transition: opacity 0.3s ease; /* Transição suave para opacidade */
+  transition: all 0.3s ease;
 }
 
-.ebook-link:hover {
-  opacity: 0.8; /* Efeito de opacidade ao passar o mouse */
+/* Estilo do Botão Primário (WhatsApp) */
+.hero-button.primary {
+  background-color: #25D366;
+  color: #FFFFFF;
 }
 
-.dot {
-  width: 8px;
-  height: 8px;
-  background-color: #00FF00; /* Cor vermelha */
-  border-radius: 50%; /* Forma de círculo */
-  animation: blink 1s infinite; /* Animação de intermitência */
+.hero-button.primary:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+/* Estilo do Botão Secundário (Ver Projetos) */
+.hero-button.secondary {
+  background-color: transparent;
+  color: #00FF00;
+  border: 2px solid #00FF00;
 }
 
-/* Título e descrição */
-h1 {
-  font-size: 2.7rem;
-  margin-bottom: 0rem;
-  color: #00FF00; /* Verde neon */
+.hero-button.secondary:hover {
+  background-color: #00FF00;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #CCCCCC; /* Cinza claro */
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px; /* Reduz o padding geral */
+  }
+
+  .hero-title {
+    font-size: 2.2rem; /* Reduz o tamanho do título */
+    margin-bottom: 0.5rem; /* Reduz o espaçamento abaixo do título */
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem; /* Reduz o tamanho do subtítulo */
+    margin-bottom: 1.5rem; /* Reduz o espaçamento abaixo do subtítulo */
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Empilha os botões */
+    gap: 10px; /* Reduz o espaçamento entre os botões */
+  }
+
+  .hero-button {
+    padding: 12px 25px; /* Reduz o padding dos botões */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte dos botões */
+  }
 }
 
-/* Botão do WhatsApp */
-.whatsapp-button {
-  background-color: #25D366; /* Cor verde do WhatsApp */
-  color: #FFFFFF; /* Texto branco */
-  padding: 15px 30px; /* Espaçamento interno */
-  border: none; /* Remove a borda */
-  border-radius: 5px; /* Bordas arredondadas */
-  font-size: 1rem; /* Tamanho do texto */
-  font-weight: 600; /* Texto em negrito */
-  cursor: pointer; /* Cursor de ponteiro */
-  transition: background-color 0.3s ease; /* Transição suave */
-}
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 15px; /* Reduz ainda mais o padding */
+  }
 
-.whatsapp-button:hover {
-  background-color: #128C7E; /* Cor mais escura ao passar o mouse */
+  .hero-title {
+    font-size: 1.8rem; /* Reduz ainda mais o tamanho do título */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem; /* Reduz ainda mais o tamanho do subtítulo */
+  }
 }

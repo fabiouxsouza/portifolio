@@ -1,6 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Importe o Framer Motion
-import './Hero.css';
+import { motion } from 'framer-motion';
+import './Hero.css'; // Importe o arquivo CSS do Hero
 
 const Hero = () => {
   // Função para redirecionar para o WhatsApp
@@ -8,15 +8,7 @@ const Hero = () => {
     const phoneNumber = '5583998958190'; // Substitua pelo seu número
     const message = 'Olá, gostaria de solicitar um orçamento grátis!';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank'); // Abre o link em uma nova aba
-  };
-
-  // Função para rolar a página até a seção de captura de e-mails
-  const scrollToNewsletter = () => {
-    const newsletterSection = document.getElementById('newsletter');
-    if (newsletterSection) {
-      newsletterSection.scrollIntoView({ behavior: 'smooth' }); // Rola suavemente
-    }
+    window.open(url, '_blank');
   };
 
   // Variantes de animação
@@ -28,47 +20,42 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        {/* Links dos e-books */}
-        <motion.div
-          className="hero-links"
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-        >
-          <button className="ebook-link" onClick={scrollToNewsletter}>
-            <span className="dot"></span> Resgate agora seu e-book grátis
-          </button>
-          <button className="ebook-link" onClick={scrollToNewsletter}>
-            <i className="fas fa-book"></i> E-book: Como criar seu primeiro Micro-SaaS
-          </button>
-        </motion.div>
-
-        {/* Título e descrição */}
+        {/* Título Principal (Mais Impactante) */}
         <motion.h1
+          className="hero-title"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
         >
-          Transformo ideias em experiências digitais fluidas e memoráveis.
+          Desenvolvedor Front-End Criativo e Experiente, Focado em Resultados.
         </motion.h1>
+
+        {/* Subtítulo (Descrição Mais Detalhada) */}
         <motion.p
+          className="hero-subtitle"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
         >
-          Desenvolvedor Front-End | React.js & Next.js | UI/UX Designer.
+          Especializado em React.js, Next.js e UI/UX Design, transformo ideias em
+          interfaces web modernas, performáticas e intuitivas. Vamos criar algo incrível
+          juntos?
         </motion.p>
 
-        {/* Botão do WhatsApp */}
-        <motion.button
-          className="whatsapp-button"
-          onClick={redirectToWhatsApp}
+        {/* Chamada para Ação (Botões) */}
+        <motion.div
+          className="hero-buttons"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
         >
-          <i className="fab fa-whatsapp"></i> Solicite um orçamento grátis
-        </motion.button>
+          <button className="hero-button primary" onClick={redirectToWhatsApp}>
+            <i className="fab fa-whatsapp"></i> Solicitar Orçamento
+          </button>
+          <button className="hero-button secondary">
+            Ver Projetos
+          </button>
+        </motion.div>
       </div>
     </section>
   );
