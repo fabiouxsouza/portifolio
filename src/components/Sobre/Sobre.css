@@ -1,32 +1,113 @@
-.sobre {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #111111; /* Fundo cinza escuro */
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #00FF00; /* Verde neon */
-}
-
-p {
-  font-size: 1rem;
-  color: #CCCCCC; /* Cinza claro */
-  max-width: 600px;
-  margin: 0 auto 2rem;
-}
-
-.tecnologias {
+.about {
+  padding: 80px 20px;
+  background-color: #111111;
+  color: #FFFFFF;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
 }
 
-.tecnologias span {
-  background-color: #00FF00; /* Verde neon */
-  color: #000000; /* Texto preto */
-  padding: 5px 10px;
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Foto */
+.about-photo {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+/* Título Principal */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00FF00;
+}
+
+/* Descrição Detalhada */
+.about-description {
+  font-size: 1.1rem;
+  color: #CCCCCC;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Lista de Habilidades */
+.about-skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.about-skill-item {
+  background-color: #00FF00;
+  color: #000000;
+  padding: 8px 16px;
   border-radius: 5px;
   font-weight: 600;
+}
+
+/* Proposta de Valor */
+.about-value-proposition {
+  font-size: 1.1rem;
+  color: #CCCCCC;
+  line-height: 1.6;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-skills-list {
+    gap: 8px;
+  }
+
+  .about-skill-item {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
 }
